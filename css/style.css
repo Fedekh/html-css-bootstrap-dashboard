@@ -2,6 +2,11 @@
 
 /* VARIABLES */
 
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 :root{
     --sidebar-color: #051E34;
     --sidebar-width: 60px;
@@ -59,12 +64,31 @@ header {
     border: 1px solid rebeccapurple;
 }
 
-#main-section section {
+#first-section {
     /* debug */
     background-color: rgb(87, 94, 91);
     border: 1px solid rgb(51, 153, 65);
-
 }
+
+#first-section section{
+    /* debug */
+    background-color: rgb(143, 127, 56);
+    border: 1px solid rgb(1, 22, 4);
+}
+
+#second-section {
+    /* debug */
+    background-color: rgb(112, 121, 202);
+    border: 1px solid rgb(31, 104, 41);
+}
+
+#second-section section{
+    /* debug */
+    background-color: rgb(105, 105, 101);
+    border: 1px solid rgb(238, 42, 7);
+}
+
+
 
 
 /* ####################################################### */
