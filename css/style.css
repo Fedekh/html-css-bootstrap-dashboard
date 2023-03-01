@@ -18,6 +18,10 @@ body {
     --bell-color: #FF8F00;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -34,8 +38,10 @@ ul {
 .wrapper{
     height: 100vh;
     /* debug */
-    background-color: rgb(37, 36, 36)
+    /* background-color: rgb(37, 36, 36) */
 }
+
+
 
 /* ------------------------------------------------------------- */
 
@@ -46,8 +52,47 @@ header {
     height: var(--header-height);
 
     /* debug */
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
 }
+
+.logo {
+    height: 100%;
+}
+
+.logo > * {
+    width: var(--header-height);
+    
+}
+
+.logo-normal {
+    height: var(--header-height);
+    border: 1px solid red;
+    width: 200px;
+    /* line-height: var(--header-height); */
+    
+}
+
+.cta {
+    width: 200px;
+}
+
+.logo-normal img {
+    max-width: none;
+    width: 200px;
+}
+
+header .input-group {
+    width: 60%;
+}
+
+header .input-group i {
+    width: 100%;
+}
+
+.cta i:last-child {
+    color:  var(--bell-color);
+}
+
 
 /* -------------------------------------------------------------- */
 /* SIDEBAR */
