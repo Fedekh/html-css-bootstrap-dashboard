@@ -14,8 +14,9 @@ body {
     --header-color: #FFFFFF;
     --header-height: 70px;
     --navbarblue-top-color:#1B72E8;
-    --navbarblue-top-height: 70px;
+    /* --navbarblue-top-height: 70px; */
     --bell-color: #FF8F00;
+    --btn-color: #165BBA;
 }
 
 img {
@@ -68,8 +69,23 @@ header {
     height: var(--header-height);
     border: 1px solid red;
     width: 200px;
-    /* line-height: var(--header-height); */
-    
+}
+
+.input-group > .form-control{
+    box-shadow: none;
+    border-color: initial;
+    border-radius: 20px;
+    height: 35.73px;
+    border-color: lightgray;
+
+
+}
+
+.input-group > .form-control:focus {
+    box-shadow: none;
+    border-color: lightgray;
+    border-radius: 20px;
+
 }
 
 
@@ -123,6 +139,9 @@ header .input-group i {
 
 /* -------------------------------------------------------------- */
 
+/* MAIN CONTENT  */
+/* DEFAULT */
+
 #main-content {
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--header-height));
@@ -132,7 +151,7 @@ header .input-group i {
 }
 
 #navbar-blue{
-    width: 100%;
+    width: 100%;    
     height: var(--navbarblue-top-height);
     background-color: var(--navbarblue-top-color);
     position: sticky;
@@ -170,7 +189,26 @@ header .input-group i {
     border: 1px solid rgb(238, 42, 7);
 }
 
+/* ------------------------------------------------------------------ */
 
+/* NAVBAR-BLUE  */
+
+#navbar-blue > * {
+    border: 1px solid red;
+    width: 100%;
+    /* height: 100px; */
+}
+
+.new-student a {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.boolean button {
+    background-color: var(--btn-color);
+}
 
 
 /* ####################################################### */
