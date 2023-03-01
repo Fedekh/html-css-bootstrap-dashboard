@@ -89,7 +89,7 @@ header .input-group i {
     width: 100%;
 }
 
-.cta i:last-child {
+.cta a:last-child i {
     color:  var(--bell-color);
 }
 
