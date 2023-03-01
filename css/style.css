@@ -1,0 +1,86 @@
+/* COMMONS */
+
+/* VARIABLES */
+
+:root{
+    --sidebar-color: #051E34;
+    --sidebar-width: 60px;
+    --sidebar-width-lg: 150px;
+    --header-color: #FFFFFF;
+    --header-height: 70px;
+    --navbarblue-top-color:#1B72E8;
+    --navbarblue-top-height: 70px;
+    --bell-color: #FF8F00;
+}
+
+
+/* LAYOUT */
+
+.wrapper{
+    height: 100vh;
+    /* debug */
+    background-color: rgb(37, 36, 36)
+}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+
+    /* debug */
+    background-color: lightskyblue;
+}
+
+#sidebar {
+    height: calc(100vh - var(--header-height));
+    width: var(--sidebar-width);
+    background-color: var(--sidebar-color);
+}
+
+#main-content {
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100vh - var(--header-height));
+    /* debug */
+    background-color: rgb(150, 112, 80);
+    overflow-y: auto;
+}
+
+#navbar-blue{
+    width: 100%;
+    height: var(--navbarblue-top-height);
+    background-color: var(--navbarblue-top-color);
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#main-section{
+    /* debug */    
+    border: 1px solid rebeccapurple;
+}
+
+#main-section section {
+    /* debug */
+    background-color: rgb(87, 94, 91);
+    border: 1px solid rgb(51, 153, 65);
+
+}
+
+
+/* ####################################################### */
+
+
+/* MEDIA QUERY LARGE MONITOR */
+
+@media screen and (width >=992px) {
+    #sidebar {
+        width: var(--sidebar-width-lg);
+    }
+
+    #main-content {
+        width: calc(100% - var(--sidebar-width-lg));
+        /* debug */
+        background-color: rgb(150, 112, 80);
+    }
+    
+}
