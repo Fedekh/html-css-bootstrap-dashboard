@@ -18,6 +18,16 @@ body {
     --bell-color: #FF8F00;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0rem;
+}
 
 /* LAYOUT */
 
@@ -27,6 +37,10 @@ body {
     background-color: rgb(37, 36, 36)
 }
 
+/* ------------------------------------------------------------- */
+
+/* MAIN HEADER */
+
 header {
     width: 100%;
     height: var(--header-height);
@@ -35,11 +49,37 @@ header {
     background-color: lightskyblue;
 }
 
+/* -------------------------------------------------------------- */
+/* SIDEBAR */
+
 #sidebar {
     height: calc(100vh - var(--header-height));
     width: var(--sidebar-width);
     background-color: var(--sidebar-color);
 }
+
+
+
+#home {
+    width: 100%;
+    /* debug */
+    border: 1px solid green;
+}
+
+#home > * {
+    /* debug */
+    border: 1px solid red;
+}
+
+#setting {
+    width: 100%;
+
+    /* debug */
+    height: 50px;
+    border: 1px solid green;
+}
+
+/* -------------------------------------------------------------- */
 
 #main-content {
     width: calc(100% - var(--sidebar-width));
