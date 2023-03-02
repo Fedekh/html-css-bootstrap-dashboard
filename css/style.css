@@ -23,9 +23,6 @@ img {
     max-width: 100%;
 }
 
-table img {
-    
-}
 
 a {
     text-decoration: none;
@@ -131,10 +128,6 @@ header .input-group i {
     /* border: 1px solid green; */
 }
 
-#home > * {
-    /* debug */
-    /* border: 1px solid red; */
-}
 
 #setting {
     width: 100%;
