@@ -194,7 +194,26 @@ header .input-group i {
 
 }
 
+.offcanvas.show:not(.hiding){
+    width: 50%;
+}
 
+.submit {
+    width: 15%;
+}
+
+#empty {
+    background-color: #FF8F00;
+    border: none;
+    color: black;
+    
+}
+
+
+
+.offcanvas-body .row .col.md-6:before {
+    content: "40";
+}
 
 .new-student a {
     width: 30px;

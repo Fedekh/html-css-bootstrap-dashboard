@@ -118,9 +118,20 @@
               <div class="offcanvas-body">
                 <form class="row g-3">
                   <div class="col-md-6">
+                    <label for="inputname" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputname">
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label for="inputsurname" class="form-label">Cognome</label>
+                    <input type="text" class="form-control" id="inputsurname">
+                  </div>
+
+                  <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
                     <input type="email" class="form-control" id="inputEmail4">
                   </div>
+                  
                   <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Password</label>
                     <input type="password" class="form-control" id="inputPassword4">
@@ -128,11 +139,7 @@
                   <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
                     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                  </div>
-                  <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                  </div>
+                  </div>                  
                   <div class="col-md-6">
                     <label for="inputCity" class="form-label">City</label>
                     <input type="text" class="form-control" id="inputCity">
@@ -148,6 +155,10 @@
                     <label for="inputZip" class="form-label">Zip</label>
                     <input type="text" class="form-control" id="inputZip">
                   </div>
+                  <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                  </div>
                   <div class="col-12">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="gridCheck">
@@ -156,8 +167,11 @@
                       </label>
                     </div>
                   </div>
-                  <div class="col-12">
+                  <div class="submit col-3 g-0 mr-0">
                     <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                  <div  class="empty col-3 g-0 mx-0">
+                    <button id="empty" type="submit" class="btn btn-primary">Svuota</button>
                   </div>
                 </form>
               </div>
