@@ -73,7 +73,7 @@ header {
 
 .logo-normal {
     height: var(--header-height);
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 200px;
 }
 
@@ -138,11 +138,20 @@ header .input-group i {
 
 #setting {
     width: 100%;
-
     /* debug */
     /* height: 50px; */
     /* border: 1px solid green; */
 }
+
+
+#setting, #home li{
+    transition: all .5s;
+}
+
+#home li:hover, #setting:hover {
+    background-color: rgba(255,255,255,0.7)    
+}
+
 
 /* -------------------------------------------------------------- */
 
@@ -153,20 +162,15 @@ header .input-group i {
     width: calc(100% - var(--sidebar-width));
     height: calc(100vh - var(--header-height));
     /* debug */
-    background-color: rgb(150, 112, 80);
+    /* background-color: rgb(150, 112, 80); */
     /* overflow-y: auto; */
 }
 
-#navbar-blue{
-    width: 100%;    
-    height: var(--navbarblue-top-height);
-    background-color: var(--navbarblue-top-color);
-    
-}
+
 
 #main-section{
     /* debug */    
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
 }
 
 
@@ -175,11 +179,53 @@ header .input-group i {
 
 /* NAVBAR-BLUE  */
 
+#navbar-blue{
+    width: 100%;    
+    height: var(--navbarblue-top-height);
+    background-color: var(--navbarblue-top-color);
+    
+}
+
 #navbar-blue > * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     
 }
+
+#navbar-blue a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* SUPERBONUS WINDOW */
+
+.new-student{
+    position: relative;
+}
+
+
+
+.container-hidden {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: -50%;
+    border: 3px solid green;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #606061;
+  }
+    
+  .new-student a:active .container-hidden{
+    right: 0;
+    display: block;
+  }
+  
+  
+
+
 
 .new-student a {
     width: 30px;
@@ -190,19 +236,29 @@ header .input-group i {
     background-color: var(--btn-color);
 }
 
-.ms_name {
-    max-width: 30%;
+.boolean button:hover {
+    background-color: #0c4f9a;;
 }
 
-table .ms_name .avatar {
-    max-width: 25%;
-    display: inline-block;
+.ms_roi, .ms_state, .ms_actions {
+    width: 10%;
 }
 
-.ms_class {
-    width: 70px;
-    display: inline-block;
+.ms_date {
+    width: 25%;
+}
 
+.ms_name > * {
+    display: inline-block;
+   
+}
+
+
+
+.ms_name .avatar {
+    width: 30%;
+    max-width: 50px;
+    min-width: 20px;
 }
 
 /* ####################################################### */
@@ -218,7 +274,7 @@ table .ms_name .avatar {
     #main-content {
         width: calc(100% - var(--sidebar-width-lg));
         /* debug */
-        background-color: rgb(150, 112, 80);
+       
     }
     
 }

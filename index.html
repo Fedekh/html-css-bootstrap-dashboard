@@ -23,7 +23,7 @@
 <body>
 
     <!-- MAIN CONTAINER WRAPPER -->
-    <div class="wrapper">
+    <div class="wrapper ">        
 
         <!-- HEADER -->
         <header class="container-fluid d-flex align-items-center justify-content-between">
@@ -50,14 +50,10 @@
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-3 text-black"></i>
                 </a>
                 <a href="">
-                    <i class="fa-solid fa-bell px-3"></i>
+                    <i class="fa-solid fa-bell px-3 bell"></i>
                 </a>
-
-
             </div>
-        
-            
-              
+                                  
         </header>
         <!-- /HEADER -->
 
@@ -77,14 +73,67 @@
             </div>
             <!-- /SIDEBAR -->
 
-            <!-- MAIN CONTENT -->
+            <!-- MAIN CONTENT -->            
             <div id="main-content" class="overflow-y-auto">  
-
+                
                 <!-- NAVBAR-BLUE -->
                 <div id="navbar-blue" class="text-white d-md-flex flex-nowrap container-fluid">
                     <section class="new-student py-4 px-3 order-md-last text-md-center">
                         <span class="student d-inline-block">Nuovo Studente</span>
-                        <a class="border rounded mx-3 text-center" href=""><i class="fa-solid fa-plus py-1"></i></a>
+                        <a class="border rounded mx-3 text-center" href=""><i class="fa-solid fa-plus p-1"></i></a>
+                        <!-- BONUS WINDOW  -->
+                        <div class="container-hidden">
+                            <div class="rightbar" id="rightbar">
+                            <div class="content">
+                                <h2>Inserisci nuovo studente</h2>
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                        </label>
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                     <!-- /BONUS WINDOW  -->
                     </section>
                     <section class="boolean py-4 px-3 order-md-first">
                         <h2 class="d-inline-block">Boolean</h2>
@@ -107,7 +156,9 @@
                 <!-- /NAVBAR-BLUE -->
                 
                 <!-- MAIN SECTION -->   
+
                 <div id="main-section" class="py-4">
+                    
                     <div class="container-fluid py-4 d-lg-flex">
                         <div class="row g-4">
                             <div class="col-12 col-lg-7">
@@ -120,8 +171,8 @@
                                         <thead>
                                           <tr>
                                             <th scope="col" class="">NOME</th>
-                                            <th scope="col" class="" >Data Inizio</th>
-                                            <th scope="col" class="">ROI</th>
+                                            <th scope="col" class="d-none d-md-table-cell" >Data Inizio</th>
+                                            <th scope="col" class="d-none d-sm-table-cell">ROI</th>
                                             <th scope="col">Stato</th>
                                             <th scope="col">Azioni</th>
                                           </tr>
@@ -134,10 +185,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 73</p>
                                             </td>
-                                            <td class="ms_date" >15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell" >15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -146,10 +197,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 74</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle align-middle">Done</td>
+                                            <td class="ms_actions align-middle align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -158,10 +209,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 75</p>
                                             </td>
-                                           <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                           <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -170,10 +221,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 76</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -182,10 +233,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 77</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -194,10 +245,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 78</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -206,10 +257,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 79</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi" >20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell" >20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
                                           <tr>
                                             <td class="ms_name">
@@ -218,10 +269,10 @@
                                                 </div>
                                                 <p class="ms_class mx-3">Classe 80</p>
                                             </td>
-                                            <td class="ms_date">15 Fed 2021</td>
-                                            <td class="ms_roi">20%</td>
-                                            <td class="ms_state">Done</td>
-                                            <td class="ms_actions">Otto</td>
+                                            <td class="ms_date align-middle d-none d-md-table-cell">15 Fed 2021</td>
+                                            <td class="ms_roi align-middle d-none d-sm-table-cell">20%</td>
+                                            <td class="ms_state align-middle">Done</td>
+                                            <td class="ms_actions align-middle">Otto</td>
                                           </tr>
 
                                           
@@ -312,7 +363,11 @@
                             </div>
                         </div>
                      </div>                  
-                                      
+                    
+                    
+                    
+
+                      
                                     
                 </div>
                 <!-- /MAIN SECTION -->
