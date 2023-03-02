@@ -1,336 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- BOOTSTRAP LINK -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    </head>
-    <!-- FONTAWESOME LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- STYLE CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- BOOTSTRAP LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+<!-- FONTAWESOME LINK -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- STYLE CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
 
-    <!-- MAIN CONTAINER WRAPPER -->
-    <div class="wrapper ">        
+  <!-- MAIN CONTAINER WRAPPER -->
+  <div class="wrapper ">
 
-        <!-- HEADER -->
-        <header class="container-fluid d-flex align-items-center justify-content-between">
-            <section class="logo">
-                <a class="logo-mobile d-lg-none">
-                    <img src="img/mobile-logo.png" alt="Boolean logo">
-                </a>
-                <a class="logo-normal align-items-center d-none d-lg-flex me-auto">
-                    <img src="img/logo.svg" alt="Boolean logo">
-                </a>                        
-            </section>
-            <div class="input-group d-flex align-items-center flex-nowrap">
-                <label class="input-group-text fs-4"><i class="fa-solid fa-magnifying-glass"></i></label>
-                <input type="text" class="form-control" placeholder="Cerca info su Lavarel" aria-label="search">
+    <!-- HEADER -->
+    <header class="container-fluid d-flex align-items-center justify-content-between">
+      <section class="logo">
+        <a class="logo-mobile d-lg-none">
+          <img src="img/mobile-logo.png" alt="Boolean logo">
+        </a>
+        <a class="logo-normal align-items-center d-none d-lg-flex me-auto">
+          <img src="img/logo.svg" alt="Boolean logo">
+        </a>
+      </section>
+      <div class="input-group d-flex align-items-center flex-nowrap">
+        <label class="input-group-text fs-4"><i class="fa-solid fa-magnifying-glass"></i></label>
+        <input type="text" class="form-control" placeholder="Cerca info su Lavarel" aria-label="search">
+      </div>
+      <div class="cta d-flex justify-content-end justify-content-lg-center align-items-center">
+        <a href="">
+          <i class="fa-solid fa-bars px-3 d-none d-lg-block text-black"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-question px-3 d-none d-lg-block text-black"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-3 text-black"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-bell px-3 bell"></i>
+        </a>
+      </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <main class="d-flex">
+
+      <!-- SIDEBAR -->
+      <div id="sidebar" class="text-white d-flex flex-column py-4 justify-content-between">
+        <ul id="home" class="py-3 text-center">
+          <li class="mb-2"><a href=""><i class="fa-solid fa-house"></i><span
+                class="d-none d-lg-inline px-4">Home</span></a></li>
+          <li class="mb-2"><a href=""><i class="fa-solid fa-chart-simple"></i><span
+                class="d-none d-lg-inline px-4">Stats</span></a></li>
+          <li class="mb-2"><a href=""><i class="fa-solid fa-signal"></i><span
+                class="d-none d-lg-inline px-4">Signal</span></a></li>
+        </ul>
+        <div id="setting" class="d-flex justify-content-between align-items-center px-4">
+          <a href="" class=""><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline px-3">Admin</span></a>
+        </div>
+      </div>
+      <!-- /SIDEBAR -->
+
+      <!-- MAIN CONTENT -->
+      <div id="main-content" class="overflow-y-auto">
+
+        <!-- NAVBAR-BLUE -->
+        <div id="navbar-blue" class="text-white d-md-flex flex-nowrap container-fluid">
+          <section class="new-student py-4 px-3 order-md-last text-md-center">
+            <span class="student d-inline-block">Nuovo Studente</span>
+            <a class="plus border rounded mx-3 text-center" href=""><i class="fa-solid fa-plus p-1"></i></a>
+          </section>
+
+          <section class="boolean py-4 px-4 order-md-first">
+            <h2 class="d-inline-block">Boolean</h2>
+            <a class="" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm">Piano
+                blaze</button></a>
+            <div class="ms_badges">
+              <span class="badge rounded-pill">3 app</span>
+              <span class="bg-transparent"><i class="fa-solid fa-angles-right"></i></span>
+              <span class="badge rounded-pill d-lg-none ">+</span>
+              <span class="badge rounded-pill d-none d-lg-inline">Boolean mobile app</span>
+              <span class="badge rounded-pill d-none d-lg-inline"> Boolean web app</span>
+              <span class="badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
+            </div>
+          </section>
+          <section class="online py-4 px-3">
+            <p>Studenti in burnout negli ultimi 30 giorni</p>
+            <h3>125</h3>
+          </section>
+          <!-- canvas -->
+          <div class="bonus-canvas">
+            <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Inserisco nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-            <div class="cta d-flex justify-content-end justify-content-lg-center align-items-center">
-                <a href="">
-                    <i class="fa-solid fa-bars px-3 d-none d-lg-block text-black"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-question px-3 d-none d-lg-block text-black"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-3 text-black"></i>
-                </a>
-                <a href="">
-                    <i class="fa-solid fa-bell px-3 bell"></i>
-                </a>
-            </div>
-                                  
-        </header>
-        <!-- /HEADER -->
+              <div class="offcanvas-body">
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                  </div>
+                </form>
+              </div>
+            </div>  
+          </div>
+          <!-- /canvas -->
+          </div>
+          <!-- /NAVBAR-BLUE -->
 
-        <!-- MAIN -->
-        <main class="d-flex">
+          <!-- MAIN SECTION -->
 
-            <!-- SIDEBAR -->
-            <div id="sidebar" class="text-white d-flex flex-column py-4 justify-content-between">
-                <ul id="home" class="py-3 text-center">
-                    <li class="mb-2"><a href=""><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline px-4" >Home</span></a></li>
-                    <li class="mb-2"><a href=""><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline px-4">Stats</span></a></li>
-                    <li class="mb-2"><a href=""><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline px-4">Signal</span></a></li>
-                </ul>
-                <div id="setting" class="d-flex justify-content-between align-items-center px-4">
-                    <a href="" class=""><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline px-3">Admin</span></a>
-                </div>
-            </div>
-            <!-- /SIDEBAR -->
+          <div id="main-section" class="py-4">
 
-            <!-- MAIN CONTENT -->            
-            <div id="main-content" class="overflow-y-auto">  
-                
-                <!-- NAVBAR-BLUE -->
-                <div id="navbar-blue" class="text-white d-md-flex flex-nowrap container-fluid">
-                    <section class="new-student py-4 px-3 order-md-last text-md-center">
-                        <span class="student d-inline-block">Nuovo Studente</span>
-                        <a class="plus border rounded mx-3 text-center" href=""><i class="fa-solid fa-plus p-1"></i></a>
-                    </section>
-                    <section class="boolean py-4 px-4 order-md-first">
-                        <h2 class="d-inline-block">Boolean</h2>
-                        <a class="" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm">Piano blaze</button></a>
-                        <div class="ms_badges">
-                          <span class="badge rounded-pill">3 app</span>
-                          <span class="bg-transparent"><i class="fa-solid fa-angles-right"></i></span>
-                          <span class="badge rounded-pill d-lg-none ">+</span>
-                          <span class="badge rounded-pill d-none d-lg-inline">Boolean mobile app</span>
-                          <span class="badge rounded-pill d-none d-lg-inline"> Boolean web app</span>
-                          <span class="badge rounded-pill d-none d-lg-inline">Boolean blog app</span>
+            <div class="container-fluid py-4 d-lg-flex">
+              <div class="row g-4">
+                <div class="col-12 col-lg-7">
+
+                  <!-- PROSSIME CLASSI -->
+                  <div class="card mb-3">
+                    <div class="card-header fw-bold">
+                      Prossime classi
+                    </div>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col" colspan="4">Nome</th>
+                          <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
+                          <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                          <th scope="col">Stato</th>
+                          <th scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 75
+                          </th>
+                          <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 76
+                          </th>
+                          <td class="d-none d-lg-table-cell">16 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 77
+                          </th>
+                          <td class="d-none d-lg-table-cell">17 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_process">Process</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 78
+                          </th>
+                          <td class="d-none d-lg-table-cell">18 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 79
+                          </th>
+                          <td class="d-none d-lg-table-cell">19 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_failed">failed</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 80
+                          </th>
+                          <td class="d-none d-lg-table-cell">20 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 81
+                          </th>
+                          <td class="d-none d-lg-table-cell">21 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_failed">failed</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row" colspan="4">
+                            <span><img src="img/class-avatar.jpg" alt=""></span> Classe 82
+                          </th>
+                          <td class="d-none d-lg-table-cell">22 Feb 2021</td>
+                          <td class="d-none d-md-table-cell">20%</td>
+                          <td>
+                            <div class="badge ms_done">Done</div>
+                          </td>
+                          <td>
+                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /PROSSIME CLASSI -->
+
+                  <!-- FAQ -->
+                  <div class="card">
+                    <div class="card-header">
+                      F.A.Q.
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Come aggiungere un nuovo studente
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Clicca sul + in alto nella sezione blu .</div>
                         </div>
-                    </section>
-                    <section class="online py-4 px-3">
-                        <p>Studenti in burnout negli ultimi 30 giorni</p>
-                        <h3>125</h3>
-                    </section>
-                </div>
-                <!-- /NAVBAR-BLUE -->
-
-                <!-- MAIN SECTION -->   
-
-                <div id="main-section" class="py-4">
-                    
-                    <div class="container-fluid py-4 d-lg-flex">
-                        <div class="row g-4">
-                            <div class="col-12 col-lg-7">
-
-                                <!-- PROSSIME CLASSI -->
-                                <div class="card mb-3">
-                                  <div class="card-header fw-bold">
-                                    Prossime classi
-                                  </div>
-                                  <table class="table table-hover">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col" colspan="4">Nome</th>
-                                        <th scope="col" class="d-none d-lg-table-cell">Data inizio</th>
-                                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 75
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">15 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_done">Done</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 76
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">16 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_done">Done</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 77
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">17 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_process">Process</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 78
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">18 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_done">Done</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 79
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">19 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_failed">failed</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 80
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">20 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_done">Done</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 81
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">21 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_failed">failed</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row" colspan="4">
-                                          <span><img src="img/class-avatar.jpg" alt=""></span> Classe 82
-                                        </th>
-                                        <td class="d-none d-lg-table-cell">22 Feb 2021</td>
-                                        <td class="d-none d-md-table-cell">20%</td>
-                                        <td><div class="badge ms_done">Done</div></td>
-                                        <td>
-                                          <button class="btn"><i class="fa-solid fa-pencil"></i></button>
-                                          <button class="btn"><i class="fa-solid fa-trash"></i></button>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <!-- /PROSSIME CLASSI -->
-
-                                <!-- FAQ -->
-                                <div class="card">
-                                    <div class="card-header">
-                                      F.A.Q.
-                                    </div>
-                                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                              Come aggiungere un nuovo studente
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu .</div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                              Come posso accedere alle info del mio account
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Clicca sull icona della campanella</div>
-                                          </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                          <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                              Posso usare questa dashboard da mobile ?
-                                            </button>
-                                          </h2>
-                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Di solito è inusuale usare dashboard del genere da mobile, ma i nostri sviluppato esauriti hanno fatto di tutto per permetterti un'esperienza accettabilr anche da dispositivi a schermi ridotti</div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                </div>
-                                <!-- /FAQ -->
-                            </div>
-
-                            <div class="col-12 col-lg-5">
-                                <!-- TODO -->
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                      TO DO LIST
-                                    </div>
-                                    <ul class="list-group p-3">
-                                        <li class="list-group-item">
-                                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                          <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
-                                        </li>
-                                        <li class="list-group-item">
-                                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                          <label class="form-check-label" for="secondCheckbox">Lezioni su bootstrap</label>
-                                        </li>
-                                        <li class="list-group-item">
-                                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                          <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
-                                        </li>
-                                      </ul>
-                                </div>
-                                <!-- /TODO -->
-
-                                <!-- UTENTI ATTIVI -->
-                                <div class="card">
-                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title">Utenti attivi</h5>
-                                      <p class="card-text">Utenti attivi nella piattaforma nell ultimo mese.</p>
-                                    </div>
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">Gennaio: 1200</li>
-                                      <li class="list-group-item">Febbraio: 800</li>
-                                      <li class="list-group-item">Marzo: 1500 </li>
-                                      <li class="list-group-item"><a href="" class="text-primary text-decoration-underline" >Visualizza report aprrofondito</a></li>
-                                    </ul>                                    
-                                  </div>
-                                <!-- /UTENTI ATTIVI -->
-                            </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come posso accedere alle info del mio account
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Clicca sull icona della campanella</div>
                         </div>
-                     </div>                  
-                    
-                    
-                    
-
-                      
-                                    
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Posso usare questa dashboard da mobile ?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Di solito è inusuale usare dashboard del genere da mobile, ma i
+                            nostri sviluppato esauriti hanno fatto di tutto per permetterti un'esperienza accettabilr
+                            anche da dispositivi a schermi ridotti</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /FAQ -->
                 </div>
-                <!-- /MAIN SECTION -->
-                
+
+                <div class="col-12 col-lg-5">
+                  <!-- TODO -->
+                  <div class="card mb-4">
+                    <div class="card-header">
+                      TO DO LIST
+                    </div>
+                    <ul class="list-group p-3">
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                        <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                        <label class="form-check-label" for="secondCheckbox">Lezioni su bootstrap</label>
+                      </li>
+                      <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                        <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /TODO -->
+
+                  <!-- UTENTI ATTIVI -->
+                  <div class="card">
+                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Utenti attivi</h5>
+                      <p class="card-text">Utenti attivi nella piattaforma nell ultimo mese.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Gennaio: 1200</li>
+                      <li class="list-group-item">Febbraio: 800</li>
+                      <li class="list-group-item">Marzo: 1500 </li>
+                      <li class="list-group-item"><a href="" class="text-primary text-decoration-underline">Visualizza
+                          report aprrofondito</a></li>
+                    </ul>
+                  </div>
+                  <!-- /UTENTI ATTIVI -->
+                </div>
+              </div>
             </div>
-            <!-- /MAIN CONTENT -->
-                
-        </main>
-        <!-- /MAIN -->
-        
 
 
 
-    </div>
-    <!-- /MAIN CONTAINER WRAPPER -->
 
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+          </div>
+          <!-- /MAIN SECTION -->
+
+        </div>
+        <!-- /MAIN CONTENT -->
+
+    </main>
+    <!-- /MAIN -->
+
+
+
+
+  </div>
+  <!-- /MAIN CONTAINER WRAPPER -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
