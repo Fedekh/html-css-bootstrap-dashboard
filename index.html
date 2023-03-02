@@ -78,10 +78,10 @@
             <!-- /SIDEBAR -->
 
             <!-- MAIN CONTENT -->
-            <div id="main-content">
+            <div id="main-content" class="overflow-y-auto">  
 
                 <!-- NAVBAR-BLUE -->
-                <div id="navbar-blue" class="text-white d-md-flex flex-nowrap">
+                <div id="navbar-blue" class="text-white d-md-flex flex-nowrap container-fluid">
                     <section class="new-student py-4 px-3 order-md-last text-md-center">
                         <span class="student d-inline-block">Nuovo Studente</span>
                         <a class="border rounded mx-3 text-center" href=""><i class="fa-solid fa-plus py-1"></i></a>
@@ -108,35 +108,80 @@
                 <!-- /NAVBAR-BLUE -->
                 
                 <!-- MAIN SECTION -->   
-                <div id="main-section" class="d-lg-flex">
-                   
-                    <!-- FIRST SECTION:"PROSSIME CLASSI + FAQ" -->  
-                    <section id="first-section">
-                        <section class="class">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum similique perspiciatis excepturi assumenda sunt aliquam! Accusantium dolorum dolore perspiciatis sed tenetur fuga! Assumenda ducimus placeat a exercitationem, voluptas vel.
-                            Error odio minus iste velit libero numquam. Accusantium quam adipisci dignissimos aspernatur inventore provident repellendus sit molestiae voluptatum nemo? Necessitatibus tempore pariatur quibusdam non tempora hic natus omnis aliquam voluptatibus?
-                            Consequuntur officia aliquam provident quaerat. Obcaecati id perspiciatis error, aperiam itaque, sint suscipit doloribus consectetur expedita in, et vitae sed rerum harum eveniet quas? Tempora earum illum nobis vitae sequi!
-                        </section>
-                        <section class="faq">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum similique perspiciatis excepturi assumenda sunt aliquam! Accusantium dolorum dolore perspiciatis sed tenetur fuga! Assumenda ducimus placeat a exercitationem, voluptas vel.
-                            Error odio minus iste velit libero numquam. Accusantium quam adipisci dignissimos aspernatur inventore provident repellendus sit molestiae voluptatum nemo? Necessitatibus tempore pariatur quibusdam non tempora hic natus omnis aliquam voluptatibus?
-                            Consequuntur officia aliquam provident quaerat. Obcaecati id perspiciatis error, aperiam itaque, sint suscipit doloribus consectetur expedita in, et vitae sed rerum harum eveniet quas? Tempora earum illum nobis vitae sequi!
-                        </section>
-                    </section>
-                    <!-- /FIRST SECTION:"PROSSIME CLASSI + FAQ" -->
-                    
-                    <!-- SECOND SECTION: "TO DO LIST + UTENTI ATTIVI GRAPHIC" -->
-                    <section id="second-section">
-                        <section class="to-do">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum similique perspiciatis excepturi assumenda sunt aliquam! Accusantium dolorum dolore perspiciatis sed tenetur fuga! Assumenda ducimus placeat a exercitationem, voluptas vel.
-                            Error odio minus iste velit libero numquam. Accusantium quam adipisci dignissimos aspernatur inventore provident repellendus sit molestiae voluptatum nemo? Necessitatibus tempore pariatur quibusdam non tempora hic natus omnis aliquam voluptatibus?
-                            Consequuntur officia aliquam provident quaerat. Obcaecati id perspiciatis error, aperiam itaque, sint suscipit doloribus consectetur expedita in, et vitae sed rerum harum eveniet quas? Tempora earum illum nobis vitae sequi!
-                        </section>
-                        <section class="users">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum similique perspiciatis excepturi assumenda sunt aliquam! Accusantium dolorum dolore perspiciatis sed tenetur fuga! Assumenda ducimus placeat a exercitationem, voluptas vel.
-                            Error odio minus iste velit libero numquam. Accusantium quam adipisci dignissimos aspernatur inventore provident repellendus sit molestiae voluptatum nemo? Necessitatibus tempore pariatur quibusdam non tempora hic natus omnis aliquam voluptatibus?
-                            Consequuntur officia aliquam provident quaerat. Obcaecati id perspiciatis error, aperiam itaque, sint suscipit doloribus consectetur expedita in, et vitae sed rerum harum eveniet quas? Tempora earum illum nobis vitae sequi!
-                        </section>
-                    </section>
-                    <!-- /SECOND SECTION: "TO DO LIST + UTENTI ATTIVI GRAPHIC" -->
-                    
-                    
+                <div id="main-section" class="py-4">
+                    <div class="container-fluid py-4 d-lg-flex">
+                        <div class="row g-4">
+                            <div class="col-12 col-lg-7">
+                                <!-- PROSSIME CLASSI -->
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                      PROSSIME CLASSI
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Special title treatment</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- /PROSSIME CLASSI -->
+
+                                <!-- FAQ -->
+                                <div class="card">
+                                    <div class="card-header">
+                                      F.A.Q.
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Special title treatment</h5>
+                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                                <!-- /FAQ -->
+                            </div>
+
+                            <div class="col-12 col-lg-5">
+                                <!-- TODO -->
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                      TO DO LIST
+                                    </div>
+                                    <ul class="list-group p-3">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                          <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                          <label class="form-check-label" for="secondCheckbox">Lezioni su bootstrap</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                          <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                        </li>
+                                      </ul>
+                                </div>
+                                <!-- /TODO -->
+
+                                <!-- UTENTI ATTIVI -->
+                                <div class="card">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Utenti attivi</h5>
+                                      <p class="card-text">Utenti attivi nella piattaforma nell ultimo mese.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">Gennaio: 1200</li>
+                                      <li class="list-group-item">Febbraio: 800</li>
+                                      <li class="list-group-item">Marzo: 1500 </li>
+                                      <li class="list-group-item"><a href="" class="text-primary text-decoration-underline" >Visualizza report aprrofondito</a></li>
+                                    </ul>                                    
+                                  </div>
+                                <!-- /UTENTI ATTIVI -->
+                            </div>
+                        </div>
+                     </div>                  
+                                      
+                                    
                 </div>
                 <!-- /MAIN SECTION -->
                 
