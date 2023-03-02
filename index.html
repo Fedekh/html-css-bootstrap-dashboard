@@ -66,10 +66,10 @@
 
             <!-- SIDEBAR -->
             <div id="sidebar" class="text-white d-flex flex-column py-4 justify-content-between">
-                <ul id="home" class="py-1 text-center">
-                    <li><a href=""><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline px-4" >Home</span></a></li>
-                    <li><a href=""><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline px-4">Stats</span></a></li>
-                    <li><a href=""><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline px-4">Signal</span></a></li>
+                <ul id="home" class="py-3 text-center">
+                    <li class="mb-2"><a href=""><i class="fa-solid fa-house"></i><span class="d-none d-lg-inline px-4" >Home</span></a></li>
+                    <li class="mb-2"><a href=""><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-inline px-4">Stats</span></a></li>
+                    <li class="mb-2"><a href=""><i class="fa-solid fa-signal"></i><span class="d-none d-lg-inline px-4">Signal</span></a></li>
                 </ul>
                 <div id="setting" class="d-flex justify-content-between align-items-center px-4">
                     <a href="" class=""><i class="fa-solid fa-gear"></i><span class="d-none d-lg-inline px-3">Admin</span></a>
@@ -89,15 +89,14 @@
                     <section class="boolean py-4 px-3 order-md-first">
                         <h2 class="d-inline-block">Boolean</h2>
                         <a class="" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm">Piano blaze</button></a>
-                        <div class="other-btn align-items-center">
+                        <div class="other-btn align-items-center d-lg-flex">
                             <a class="p-2 " href=""><button type="button" class="rounded-pill btn btn-primary btn-sm">3 app</button></a>
                             <span class="d-inline-block"><i class="fa-solid fa-angles-right"></i></span>
-                            <a class="p-2 " href=""><button type="button" class="rounded-pill btn btn-primary btn-sm"><i class="fa-solid fa-plus d-lg-none"></i></button></a>
-                            <div class="hidden-btn d-lg-flex">
-                                <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean mobile app</button></a>
-                                <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean web app</button></a>
-                                <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean blog app</button></a>
-                            </div>
+                            <a class="p-2 d-lg-none" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm"><i class="fa-solid fa-plus d-lg-none"></i></button></a>
+                            <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean mobile app</button></a>
+                            <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean web app</button></a>
+                            <a class="p-2 d-block fs-5" href=""><button type="button" class="rounded-pill btn btn-primary btn-sm d-none d-lg-inline-block">Boolean blog app</button></a>
+                            
                         </div>
                     </section>
                     <section class="online py-4 px-3">
@@ -117,11 +116,117 @@
                                     <div class="card-header">
                                       PROSSIME CLASSI
                                     </div>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Special title treatment</h5>
-                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col" class="">NOME</th>
+                                            <th scope="col" class="" >Data Inizio</th>
+                                            <th scope="col" class="">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 73</p>
+                                            </td>
+                                            <td class="ms_date" >15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 74</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 75</p>
+                                            </td>
+                                           <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 76</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 77</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 78</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 79</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi" >20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+                                          <tr>
+                                            <td class="ms_name">
+                                                <div class="avatar">
+                                                    <img src="img/class-avatar.jpg" alt="">
+                                                </div>
+                                                <p class="ms_class mx-3">Classe 80</p>
+                                            </td>
+                                            <td class="ms_date">15 Fed 2021</td>
+                                            <td class="ms_roi">20%</td>
+                                            <td class="ms_state">Done</td>
+                                            <td class="ms_actions">Otto</td>
+                                          </tr>
+
+                                          
+                                        </tbody>
+                                      </table>
                                 </div>
                                 <!-- /PROSSIME CLASSI -->
 
@@ -130,11 +235,38 @@
                                     <div class="card-header">
                                       F.A.Q.
                                     </div>
-                                    <div class="card-body">
-                                      <h5 class="card-title">Special title treatment</h5>
-                                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Come aggiungere un nuovo studente
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Clicca sul + in alto nella sezione blu .</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Come posso accedere alle info del mio account
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Clicca sull icona della campanella</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Posso usare questa dashboard da mobile ?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Di solito è inusuale usare dashboard del genere da mobile, ma i nostri sviluppato esauriti hanno fatto di tutto per permetterti un'esperienza accettabilr anche da dispositivi a schermi ridotti</div>
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
                                 <!-- /FAQ -->
                             </div>
